@@ -1,0 +1,23 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif, arial, helvetica;
+    text-decoration: none;
+}
+
+body{
+    background-color: #f2f2f2;
+    width: 100wh;
+    
+}
+
+
+.footer {
+    color: white;
+    background-color: #1A1A1A;
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
