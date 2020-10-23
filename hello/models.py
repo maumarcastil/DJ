@@ -8,13 +8,15 @@ class Greeting(models.Model):
 class Article(models.Model):
     title = models.CharField(max_length=255)
     content = models.TextField()
-    public = models.BooleanField()
+    public = models.BooleanField(default=False)
     create_at = models.DateTimeField(auto_now_add = True)
     update_at = models.DateTimeField(auto_now_add = True)
+    valid = models.BooleanField(default=False)
 
 
 
 class Category(models.Model):
     name = models.CharField(max_length=255)
     description = models.TextField()
-    created_at = models.DateField()
+    created_at = models.DateField(auto_now_add = True)
+    valid = models.BooleanField(default=False)

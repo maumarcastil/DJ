@@ -1,0 +1,22 @@
+{% extends 'layout.html' %} 
+
+
+{% block content %}
+
+<h1>Estos son los articulos: </h1><hr>
+
+
+    <ul>
+        {% for article in articles %}
+        <li>Title: {{article.title}}</li>
+        <li>Content: {{article.content}}</li>
+        <li>Public: {{article.public}}</li>
+        <li>Create at: {{article.create_at}}</li>
+        <li><a href="{% url 'delete_article' article.id %}">Eliminar</a></li>
+        <br><hr>
+        {% endfor %}
+        
+    </ul>
+
+{% endblock content %}
+
